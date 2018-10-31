@@ -5,19 +5,71 @@
 
 body {
   background: #fcc;
-} 
+}
 
+.menu {
+  background-color: black;
+  color: white;
+  line-height: 2em;
+  padding: 0.2em;
+  font-family: Arial;
+  font-size: 1em;
+  color: white;
+}
 
+.menu-toggle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 5em;
+  width: 35%
+}
+
+a {
+  padding: 0.2em;
+  font-family: Arial;
+  font-size: 2em;
+  color: white;
+}
+
+/*
+.menu:hover ~ nav, nav:hover {
+  display: flex;
+}
+*/
+
+nav {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+  }
+
+  a {
+    padding: 0.2em;
+    font-family: Arial;
+    font-size: 1em;
+    color: white;
+  }
 }
 
 
@@ -30,5 +82,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
